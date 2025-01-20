@@ -1,5 +1,5 @@
-import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
-
+import {FaWhatsapp, FaInstagram} from 'react-icons/fa'
+// import wpp from 'https://wa.me/5541920035760'
 import styles from './Footer.module.css'
 
 function Footer(){
@@ -7,16 +7,15 @@ function Footer(){
         <footer className={styles.footer}>
             <ul className={styles.social_list}>
                 <li>
-                    <FaFacebook/>
+                    <a href='https://wa.me/5541920035760' target='_blank'>
+                        <FaWhatsapp/>
+                    </a>
                 </li>
                 <li>
                     <FaInstagram/>
                 </li>
-                <li>
-                    <FaLinkedin/>
-                </li>
             </ul>
-            <p className={styles.copy_right}><span>Costs</span> &copy; 2024</p>
+            <p className={styles.copy_right}><span>Croma Films</span> &copy; 2024</p>
         </footer>
     )
 }

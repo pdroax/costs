@@ -4,7 +4,7 @@ function SubmitButton() {
     return (
         <div>
             <button className={styles.btn}>
-                Enviar
+                Enviar mensagem
             </button>
         </div>
     )

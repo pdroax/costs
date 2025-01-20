@@ -9,19 +9,21 @@ import styles from './ProjectForm.module.css'
 function ProjectForm () {
 
     return (
-        <form className={styles.form}>
-            {/* inputs necessários para armazenar dados inseridos pelo usuário */}
-            <Input/>
+        <div className={styles.contato}>
+            <form className={styles.form}>
+                {/* inputs necessários para armazenar dados inseridos pelo usuário */}
+                <Input/>
 
-            <Select/>
- 
-            <TextMessage/>
-            
-            {/* Botão para enviar e-mail*/}
-            <SubmitButton/>
+                <Select/>
+    
+                <TextMessage/>
+                
+                {/* Botão para enviar e-mail*/}
+                <SubmitButton/>
 
-            
-        </form>
+                
+            </form>
+        </div>
     )
 }
 

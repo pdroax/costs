@@ -6,7 +6,7 @@ function Select() {
             <label>Selecione o assunto:</label>
             <select>
                 <option value="" selected>Selecione</option>
-                <option>Orçamento de instalação</option>
+                <option>Orçamento para instalação</option>
                 <option>Orçamento de Insulfilms</option>
             </select>
         </div>
