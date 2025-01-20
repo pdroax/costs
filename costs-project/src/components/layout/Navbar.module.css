@@ -1,16 +1,16 @@
 .navbar {
-    background-color: #222;
+    background-color: #F3DDBE;
     padding-left: 1em;
     padding-right: 1em;
 }
 
 .ajust_navbar {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
-    background-color: #222;
-    padding: 1em;
+    background-color: #F3DDBE;
+    padding: .5em;
 }
 
 .list {
@@ -20,15 +20,17 @@
 }
 
 .item {
-    margin-right: 1em;
+    margin-right: 2em;
+    font-size: .8rem;
 }
 
 .item a {
-    color: #fff;
+    color: #477398;
     text-decoration: none;
 }
 
 .item a:hover {
-    color: #ffbb33;
+    color: #153754;
+    border-bottom: 2px solid #477398;
 }
 

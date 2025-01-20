@@ -1,10 +1,10 @@
 import styles from './SubmitButton.module.css'
 
-function SubmitButton({text}) {
+function SubmitButton() {
     return (
         <div>
             <button className={styles.btn}>
-                {text}
+                Enviar
             </button>
         </div>
     )

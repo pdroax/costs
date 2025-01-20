@@ -1,19 +1,14 @@
 import styles from './Input.module.css'
 
-function Input({type, text, name, placeholder, handleOnChange, value}) {
+function Input() {
     return (
         <div className={styles.form_control}>
-            <label htmlFor={name}>
-                {text}:
-            </label>
-            <input 
-                type={type} 
-                name={name} 
-                id={name}
-                placeholder={placeholder}
-                onChange={handleOnChange}
-                value={value}
-            />
+            <label>Nome:</label>
+            <input type='text' placeholder='Preencha seu nome'/>
+            <label>E-mail:</label>
+            <input type='email' placeholder='Ex: email@exemplo.com'/>
+            <label>Telefone:</label>
+            <input type='text' placeholder='(99)99999-9999)'/>
         </div>
     )
 } 

@@ -5,17 +5,16 @@
 }
 
 .form_control label {
-    margin-top: .6em;
     margin-bottom: .6em;
     font-weight: bold;
 }
 
-.form_control input {
+.form_control textarea {
     padding: .7em;
     border-radius: 0;
     border: none;
 }
 
-.form_control input::placeholder {
+.form_control textarea::placeholder {
     color: #7b7b7b;
 }
