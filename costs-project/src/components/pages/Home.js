@@ -1,14 +1,19 @@
 import styles from './Home.module.css'
-import savings from '../../img/savings.svg'
 import LinkButton from '../layout/LinkButton'
+import videoBg from '../../img/4749771_Businesswoman_Office_3840x2160.mp4'
 
 function Home () {
     return (
         <section className={styles.home_container}>
-            <h1>Bem-vindo ao <span>Costs</span></h1>
-            <p>Comece a gerenciar os seus projetos agora mesmo!</p>
-            <LinkButton to='/newproject' text='Criar Projeto'/>
-            <img src={savings} alt='Costs'/>
+            <div className={styles.textoHome}>
+                <h1>Bem-vindo a Croma</h1>
+                <p>Os melhores insulfims para sua casa ou negócio</p>
+                <LinkButton to='/contato' text='Faça um orçamento'/>
+            </div>
+            <div className={styles.video}>
+                <video src={videoBg} autoPlay loop/>
+
+            </div>
         </section>
     )
 }
