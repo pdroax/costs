@@ -10,19 +10,20 @@
 .home_container h1.title {
     font-size: 3em;
     margin-bottom: .5em;
-    color: #F3DDBE;
+    color: #01257d;
 }
 
-.home_container h1 span {
-    color: #F3DDBE;
+/* .home_container h1 span {
+    color: #01257d;
     padding: padding 0 0.2em;
-    /* background-color: #222; */
-}
+    /* background-color: #222;
+ } */
 
 .home_container p.textIn {
     margin-bottom: 1.5em;
     font-size: 2em;
-    color: #F3DDBE;
+    /* color: #00ffff; */
+    color: #01257d;
 }
 
 .home_container img {
@@ -38,6 +39,7 @@ div.video{
 video {
     width: 100%;
     height: 100%;
+    opacity: 0.6;
     object-fit: cover;
 }
 
@@ -52,4 +54,14 @@ div.content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.rates {
+    margin: 50px;
+}
+
+.bgRates {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #F3DDBE;
 }

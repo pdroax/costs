@@ -2,6 +2,7 @@ import styles from './Home.module.css'
 import LinkButton from '../layout/LinkButton'
 import videoBg from '../video/background-video.mp4'
 import Contact from '../pages/Contact'
+import Rates from '../layout/Rates'
 
 function Home () {
     return (
@@ -20,8 +21,13 @@ function Home () {
                     <p className={styles.textIn}>Os melhores insulfims para sua residencia ou comercio estão aqui</p>
                     <LinkButton to={'/contact'} text='Faça um orçamento'/>
                 </div>
-
             </div>
+            <div className={styles.bgRates}>
+                <div className={styles.rates}>
+                    <Rates/>
+                </div>
+            </div>
+
             <div id='contato'>
                 <Contact/>
             </div>

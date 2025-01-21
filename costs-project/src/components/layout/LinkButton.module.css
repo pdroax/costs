@@ -1,7 +1,7 @@
 .btn {
     /* position: absolute; */
     /* background-color: #F3DDBE; */
-    color: #F3DDBE;
+    color: #01257d;
     padding: 1em 4em;
     font-size: 1.5em;
     text-decoration: none;
@@ -18,9 +18,9 @@
 
 
 .btn:hover {
-    color: #477398;
-    background-color: #F3DDBE;
-    border-color: #F3DDBE;
+    color: #feddb3;
+    background-color: #01257d;
+    border-color: #01257d;
     /* z-index: 0; */
 
 

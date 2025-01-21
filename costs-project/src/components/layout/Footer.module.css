@@ -2,7 +2,17 @@
     background-color: #477398;
     color: #fff;
     padding: 3em;
-    text-align: center;
+    /* text-align: center; */
+}
+
+
+.adress {
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #F3DDBE;
 }
 
 .social_list {
