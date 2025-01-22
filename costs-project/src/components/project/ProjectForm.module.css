@@ -19,7 +19,7 @@ div.contato {
     margin-top: .6em;
     margin-bottom: .6em;
     font-weight: bold;
-    color: #477498;
+    color: #01257d;
 }
 
 .form_input input {
@@ -43,14 +43,14 @@ div.contato {
 .form_select label {
     margin-bottom: .6em;
     font-weight: bold;
-    color: #477498;
+    color: #01257d;
 }
 
 .form_select select {
     padding: .7em;
     border-radius: 10px;
     border: none;
-    color: #477498;
+    color: #477498a4;
     background-color: white;
 
 }
@@ -66,7 +66,7 @@ div.contato {
 .form_text label {
     margin-bottom: .6em;
     font-weight: bold;
-    color: #477498;
+    color: #01257d;
 }
 
 .form_text textarea {

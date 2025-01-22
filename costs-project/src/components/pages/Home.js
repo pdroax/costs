@@ -17,8 +17,8 @@ function Home () {
                 </video>
                 
                 <div className={styles.content}>
-                    <h1 className={styles.title}>Bem-vindo a <span>Croma</span></h1>
-                    <p className={styles.textIn}>Os melhores insulfims para sua residencia ou comercio estão aqui</p>
+                    <h1 className={styles.title}>Transforme seu ambiente com <span>Croma Films</span></h1>
+                    <h2 className={styles.textIn}>Segurança, conforto ou privacidade: nós temos a solução. Saiba mais sobre nossas películas</h2>
                     <LinkButton to={'/contact'} text='Faça um orçamento'/>
                 </div>
             </div>

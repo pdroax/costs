@@ -1,8 +1,8 @@
 .footer {
-    background-color: #477398;
+    background-color: #01257d;
     color: #fff;
     padding: 3em;
-    /* text-align: center; */
+    text-align: center;
 }
 
 
@@ -12,7 +12,7 @@
 
 ul li a{
     text-decoration: none;
-    color: #F3DDBE;
+    color: #f8e9d4;
 }
 
 .social_list {
@@ -47,4 +47,29 @@ ul li a{
 .copy_right span {
     font-weight: bold;
     color: #F3DDBE;
+}
+
+.listStyle {
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkMaps {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#linkAdress {
+    text-align: center;
+}
+
+#ifr {
+    transition: .5s;
+}
+
+iframe {
+    width: 400px;
+    height: 250px;
 }
