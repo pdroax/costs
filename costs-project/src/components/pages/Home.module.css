@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 4em; */
+
 }
 
 .home_container h1.title {
@@ -13,17 +13,21 @@
     color: #01257d;
 }
 
-/* .home_container h1 span {
-    color: #01257d;
-    padding: padding 0 0.2em;
-    /* background-color: #222;
- } */
+
 
 .home_container h2.textIn {
-    margin-bottom: 1.5em;
+    width: 50%;
+    margin: 1.5em;
     font-size: 2em;
-    /* color: #00ffff; */
     color: #01257d;
+    text-align: center;
+}
+
+div.content p {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    max-width: 1000px;
+    text-align: center;
 }
 
 .home_container img {

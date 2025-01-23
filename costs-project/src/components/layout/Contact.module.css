@@ -4,7 +4,7 @@
 
 
 .newproject_container {
-    width: 700px;
+    /* width: 80%; */
     margin: 0 auto;
     padding: 3em;
 }
@@ -22,4 +22,16 @@ textarea:focus, input:focus, select:focus {
     border: 0 none;
     outline: 0;
 } 
+
+@media (max-width:300px) {
+    .newproject_container {
+
+    }
+}
+
+@media (min-width: 301px) and (max-width:700px) {
+    .newproject_container {
+    }
+}
+
 
