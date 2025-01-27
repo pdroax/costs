@@ -1,0 +1,82 @@
+div.contato {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    margin: 2em 0;
+}
+
+/* input */
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_input label {
+    margin-top: .6em;
+    margin-bottom: .6em;
+    font-weight: bold;
+    color: #01257d;
+}
+
+.form_input input {
+    padding: .7em;
+    border-radius: 10px;
+    border: none;
+}
+
+.form_input input::placeholder {
+    color: #477498a4;
+}
+
+/* select */
+
+.form_select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_select label {
+    margin-bottom: .6em;
+    font-weight: bold;
+    color: #01257d;
+}
+
+.form_select select {
+    padding: .7em;
+    border-radius: 10px;
+    border: none;
+    color: #01257d;
+    background-color: white;
+
+}
+
+/* textarea */
+
+.form_text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_text label {
+    margin-bottom: .6em;
+    font-weight: bold;
+    color: #01257d;
+}
+
+.form_text textarea {
+    padding: .7em;
+    border-radius: 10px;
+    border: none;
+    height: 150px;
+    resize: none;
+}
+
+.form_text textarea::placeholder {
+    color: #477498a4;
+}

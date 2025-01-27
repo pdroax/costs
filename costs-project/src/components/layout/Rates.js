@@ -1,0 +1,15 @@
+import elfSight from 'https://static.elfsight.com/platform/platform.js'
+
+{/* <script src="" async></script> */}
+
+function Rates () {
+    return (
+        <div>  
+            <div src={elfSight} async></div>
+            <div class="elfsight-app-ffe5d2e3-89cb-4523-b29b-3c90fad22762" data-elfsight-app-lazy></div>
+
+        </div>
+    )
+}
+
+export default Rates
