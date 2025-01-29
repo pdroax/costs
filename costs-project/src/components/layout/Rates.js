@@ -1,7 +1,5 @@
 import elfSight from 'https://static.elfsight.com/platform/platform.js'
 
-{/* <script src="" async></script> */}
-
 function Rates () {
     return (
         <div>  

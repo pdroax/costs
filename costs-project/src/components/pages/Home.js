@@ -1,13 +1,13 @@
 import styles from './Home.module.css'
 import LinkButton from '../layout/LinkButton'
 import videoBg from '../video/background-video.mp4'
-import Contact from '../pages/Contact'
+import Contact from './Contact'
 import Rates from '../layout/Rates'
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 
 function Home () {
 
-    const {id} = useParams();
+    // const {id} = useParams();
 
     return (
         <section className={styles.home_container}>

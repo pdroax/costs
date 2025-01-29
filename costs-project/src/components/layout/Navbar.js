@@ -13,11 +13,7 @@ function Navbar() {
     return (
         <nav className={styles.navbar}>
             <div className={styles.ajust_navbar}>
-                <div className={styles.logo}>
-                    <NavLink to='/'>
-                        <img className={styles.img} src={logo} alt='Croma films' style={{ width: 200 }} />
-                    </NavLink>
-                </div>
+
                 <ul className={`${styles.list} ${isMenuOpen ? styles.activeMenu : ''}`}>
                     <li className={styles.item}>
                         <NavLink to='/install' className={({ isActive }) => isActive ? styles.active : ''}>Instalação</NavLink>
@@ -28,6 +24,11 @@ function Navbar() {
                     <li className={styles.item}>
                         <NavLink to='/blog' className={({ isActive }) => isActive ? styles.active : ''}>Blog</NavLink>
                     </li>
+                    <div className={styles.logo}>
+                        <NavLink to='/'>
+                            <img className={styles.img} src={logo} alt='Croma films' style={{ width: 200 }} />
+                        </NavLink>
+                    </div>
                     <li className={styles.item}>
                         <NavLink to='/' className={({ isActive }) => isActive ? styles.active : ''}>Home</NavLink>
                     </li>
