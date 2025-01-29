@@ -1,5 +1,5 @@
-import styles from './Instalation.module.css'
-import Contact from '../layout/Contact'
+import styles from './Install.module.css'
+import Contact from './Contact'
 
 function Install () {
     return (

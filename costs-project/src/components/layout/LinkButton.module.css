@@ -25,3 +25,27 @@
 
 
 }
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .btn {
+        font-size: 1.2em; /* Reduz o tamanho da fonte para telas médias */
+        padding: 0.8em 3em; /* Ajusta o espaçamento */
+        border-radius: 20px; /* Torna o botão mais compacto */
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 1em; /* Reduz ainda mais o tamanho da fonte para telas menores */
+        padding: 0.6em 2em; /* Menos espaçamento para dispositivos móveis */
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 0.9em; /* Fonte menor para telas muito pequenas */
+        padding: 0.5em 1.5em; /* Ajuste no espaçamento */
+    }
+}

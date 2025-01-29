@@ -1,5 +1,5 @@
 import styles from './AboutUs.module.css'
-import Contact from '../layout/Contact'
+import Contact from './Contact'
 // import LinkButton from '../layout/LinkButton'
 // import Contact from '../pages/Contact'
 
