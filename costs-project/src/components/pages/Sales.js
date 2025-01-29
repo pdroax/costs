@@ -1,5 +1,5 @@
 import styles from './Sales.module.css'
-import Contact from '../pages/Contact'
+import Contact from './Contact'
 
 function Sales () {
     return (
