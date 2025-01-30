@@ -2,14 +2,22 @@
     background-color: #01257d;
     color: #f8e9d4;
     padding: 3em;
-    text-align: center;
+    /* text-align: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2em;
 }
 
+.copy_right {
+    text-align: center;
+}
 
+.services {
+    margin: 0 20px;
+    list-style: none;
+    font-weight: bold;
+}
 
 .footerItems {
     margin: 0 auto;
@@ -29,20 +37,19 @@
     gap: 10px;
 }
 
-.adress li a {
-    text-align: start;
+.adress li.listLink a {
+    text-align: flex-start;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #f8e9d4;
+
 }
 
 .adress li{
     list-style: none;
-    max-width: 400px;
+    max-width: 300px;
 }
 
-.adress li a, .adress li iframe {
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: #f8e9d4;
-} 
 
 ul li a{
     text-decoration: none;

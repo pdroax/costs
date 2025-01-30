@@ -3,7 +3,7 @@ import Contact from './Contact'
 
 function Install () {
     return (
-        <section className={styles.home_container}>
+        <section className={styles.install_container}>
             {/* Vídeo estático */}               
             <div className={styles.content}>
                 <h1 className={styles.title}>Nossa parceria começa <span>aqui</span></h1>
