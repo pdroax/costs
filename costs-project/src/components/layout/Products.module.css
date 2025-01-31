@@ -1,3 +1,146 @@
-.products {
-    margin-top: 100px;
+img {
+    max-width: 200px;
+    margin: 10px 0;
+    border-radius: 5%;
 }
+
+.products_container {
+            margin: 0 auto;
+            margin-top: 100px;      
+            padding: 2rem;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center; /* Centraliza o conteúdo da seção */
+            align-items: center;
+            width: 70%;
+        }
+        
+        .products_space {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+            gap: 1.5rem; /* Espaçamento entre os cards */
+            justify-items: center; /* Centraliza os cards dentro das colunas */
+            width: 100%;
+            max-width: 1200px; /* Limita a largura máxima da grid */
+        }
+        
+        .products {
+            display: grid; /* Garante que a lista de produtos use o grid */
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+            gap: 1.5rem; /* Espaçamento entre os cards */
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        
+        .product {
+            width: 100%; /* O card vai ocupar toda a largura da célula */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            height: auto; /* Permite que a altura do card se ajuste automaticamente */
+            width: 100%; /* Agora o card vai ocupar 100% da largura da célula */
+            max-width: 250px; /* Limita a largura do card a 250px */
+            overflow: hidden; /* Esconde o excesso de conteúdo */
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product_image {
+            width: 100%;
+            height: 160px; /* Tamanho fixo para as imagens */
+            object-fit: cover; /* Ajusta a imagem sem distorcer */
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        ul li {
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .product p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            color: #555;
+            height: 60px; /* Limita a altura do texto */
+            overflow: hidden; /* Esconde o texto extra */
+            text-overflow: ellipsis; /* Adiciona reticências no fim do texto */
+            transition: max-height 0.3s ease;
+        }
+        
+        /* Quando passar o mouse sobre o card, revela o texto */
+        .card:hover {
+            transform: scale(1.05); /* Aumenta um pouco o tamanho do card */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+        }
+        
+        .card:hover .product p {
+            height: auto; /* Revela o texto completo ao passar o mouse */
+        }
+        
+        .product:focus-within {
+            outline: 3px solid #ff6347; /* Adiciona um contorno para indicar foco */
+            box-shadow: 0 0 10px rgba(255, 99, 71, 0.5); /* Sombra ao clicar */
+        }
+        
+        /* Responsividade */
+        @media (max-width: 1024px) {
+            .products_space {
+                grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores que 1024px */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .products_space {
+                grid-template-columns: 1fr; /* 1 coluna em telas menores que 768px */
+            }
+        
+            .products_container {
+                padding: 1rem;
+            }
+        
+            .card {
+                padding: 1rem;
+                width: 90%; /* Ajusta a largura para 90% da tela */
+            }
+        
+            h2 {
+                font-size: 1rem;
+            }
+        
+            p {
+                font-size: 0.8rem;
+            }
+        
+            ul li {
+                font-size: 0.8rem;
+            }
+        }
