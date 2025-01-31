@@ -26,7 +26,7 @@ function Navbar() {
                     </li>
                     <div className={styles.logo}>
                         <NavLink to='/'>
-                            <img className={styles.img} src={logo} alt='Croma films' style={{ width: 200 }} />
+                            <img className={styles.img} src={logo} alt='Croma films'/>
                         </NavLink>
                     </div>
                     <li className={styles.item}>

@@ -119,7 +119,7 @@ div.content div {
     }
 
     div.video {
-        height: 50vh; /* Vídeo menor para tablets */
+/* Vídeo menor para tablets */
     }
 
     .textPitch p {
@@ -141,7 +141,7 @@ div.content div {
     }
 
     div.video {
-        height: 40vh; /* Vídeo menor para smartphones */
+/* Vídeo menor para smartphones */
     }
 
     .textPitch p {
