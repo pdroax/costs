@@ -152,8 +152,9 @@ function Products() {
 
     return (
         <section className={styles.products_container}>
-            <div>
+            <div className={styles.products_space}>
                 <ul className={styles.products}>
+
                     {[
                         { name: 'Professional Fumê', description: '', gradations: ['5%', '20%', '35%', '50%'] },
                         { name: 'Metalizada', description: 'Película semi-brilho profissional. Muito eficiente contra o calor proveniente dos raios solares, sem ser totalmente espelhada', gradations: ['5%', '20%', '35%'] },
