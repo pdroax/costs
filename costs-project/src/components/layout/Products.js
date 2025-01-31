@@ -247,7 +247,7 @@ export default Products;
 //         },
 //         { 
 //             name: 'Metalizada', 
-//             description: 'Película semi-brilho profissional...', 
+//             description: 'Película semi-brilho profissional. Muito eficiente contra o calor proveniente dos raios solares, sem ser totalmente espelhada', 
 //             gradations: [
 //                 { name: '5%', image: '/path/to/metalizada5.jpg' },
 //                 { name: '20%', image: '/path/to/metalizada20.jpg' },
