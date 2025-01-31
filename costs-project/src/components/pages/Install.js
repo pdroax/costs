@@ -1,14 +1,15 @@
 import styles from './Install.module.css'
 import Contact from './Contact'
+import Products from '../layout/Products'
 
 function Install () {
     return (
         <section className={styles.install_container}>
             {/* Vídeo estático */}               
             <div className={styles.content}>
-                <h1 className={styles.title}>Nossa parceria começa <span>aqui</span></h1>
+                <Products/>
             </div>
-            <div id='contato'>
+            <div id='contact'>
                 <Contact/>
             </div>
         </section>

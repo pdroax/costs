@@ -8,7 +8,7 @@ function Sales () {
             <div>
                 <Products/>
             </div>
-            <div id='contato'>
+            <div id='contact'>
                 <Contact/>
             </div>
         </section>

@@ -7,7 +7,7 @@ function Blog () {
             <div className={styles.content}>
                 <h1 className={styles.title}>Nossa parceria começa <span>aqui</span></h1>
             </div>
-            <div id='contato'>
+            <div id='contact'>
                 <Contact/>
             </div>
         </section>
