@@ -217,80 +217,87 @@ export default Products;
 
 // import React, { useState } from 'react';
 // import styles from './Products.module.css';
-// import fume from '../../img/fume.jpg';
-// import fume5 from '../../img/fume5.jpg';
-// import fume20 from '../../img/fume20.jpg';
-// import fume50 from '../../img/fume50.jpg';
+// import fumeDefault from '../../img/fume.jpg';
 
 // function Products() {
 //     const [openCard, setOpenCard] = useState(null);
-//     const [selectedGraduation, setSelectedGraduation] = useState(null);
+//     const [selectedGraduation, setSelectedGraduation] = useState({}); // Armazenar a graduação selecionada para cada produto
 
 //     const toggleCard = (index) => {
 //         setOpenCard(openCard === index ? null : index);
 //     };
 
-//     const handleGraduationClick = (graduation) => {
-//         setSelectedGraduation(graduation);
+//     // Função para obter a imagem com base na graduação do produto
+//     const getGraduationImage = (productIndex, graduation) => {
+//         const product = products[productIndex];
+//         const gradImage = product.gradations.find((grad) => grad.name === graduation)?.image;
+//         return gradImage || fumeDefault; // Caso não tenha imagem, retorna uma imagem padrão
 //     };
 
-//     // Função para obter a imagem com base na graduação
-//     const getGraduationImage = (graduation) => {
-//         switch (graduation) {
-//             case '5%':
-//                 return fume5;
-//             case '20%':
-//                 return fume20;
-//             case '50%':
-//                 return fume50;
-//             default:
-//                 return fume; // Imagem padrão
-//         }
+//     // Definir os produtos com graduações e suas imagens associadas
+//     const products = [
+//         { 
+//             name: 'Professional Fumê', 
+//             description: '', 
+//             gradations: [
+//                 { name: '5%', image: '/path/to/fume5.jpg' },
+//                 { name: '20%', image: '/path/to/fume20.jpg' },
+//                 { name: '50%', image: '/path/to/fume50.jpg' },
+//             ]
+//         },
+//         { 
+//             name: 'Metalizada', 
+//             description: 'Película semi-brilho profissional...', 
+//             gradations: [
+//                 { name: '5%', image: '/path/to/metalizada5.jpg' },
+//                 { name: '20%', image: '/path/to/metalizada20.jpg' },
+//                 { name: '35%', image: '/path/to/metalizada35.jpg' },
+//             ]
+//         },
+//         // Outros produtos aqui...
+//     ];
+
+//     const handleGraduationClick = (productIndex, graduation) => {
+//         setSelectedGraduation((prevState) => ({
+//             ...prevState,
+//             [productIndex]: graduation
+//         }));
 //     };
 
 //     return (
 //         <section className={styles.products_container}>
 //             <div>
 //                 <ul className={styles.products}>
-//                     {[
-//                         { name: 'Professional Fumê', description: '', gradations: ['5%', '20%', '35%', '50%'] },
-//                         { name: 'Metalizada', description: 'Película semi-brilho profissional...', gradations: ['5%', '20%', '35%'] },
-//                         { name: 'Segurança', description: 'Películas mais espessas...', gradations: ['5%', '20%', '35%', 'Transparente(Sem bloqueio de UV e IR)'] },
-//                         { name: 'Película Jateada', description: 'Película branca translúcida...', gradations: [] },
-//                         { name: 'Vinil Jateado', description: 'Um pouco mais transparente...', gradations: [] },
-//                         { name: 'Prata Espelhada', description: 'Película prata em ambos os lados...', gradations: ['5%'] },
-//                         { name: 'Silver Black', description: 'Película extra-escura...', gradations: [] },
-//                         { name: 'Espelhada (Colorida)', description: 'Películas espelhadas...', gradations: ['Vermelho Espelhado', 'Verde Espelhado', 'Azul Espelhado', 'Dourada', 'Bronze'] },
-//                         { name: 'Museu 56D', description: 'Pelicula metalizada clara...', gradations: [] },
-//                         { name: 'LG-80', description: 'Película clara...', gradations: [] },
-//                         { name: 'Opacas', description: 'Películas opacas...', gradations: [] },
-//                         { name: 'Nanocerâmica', description: 'Película premium...', gradations: ['5%', '20%', '35%', '70%'] },
-//                     ].map((product, index) => (
-//                         <li key={index} className={`${styles.product} ${openCard === index ? styles.open : ''}`}>
+//                     {products.map((product, productIndex) => (
+//                         <li key={productIndex} className={`${styles.product} ${openCard === productIndex ? styles.open : ''}`}>
 //                             <div>
 //                                 {/* A imagem aqui depende da graduação selecionada */}
-//                                 <img src={selectedGraduation ? getGraduationImage(selectedGraduation) : fume} alt={product.name} />
+//                                 <img 
+//                                     src={selectedGraduation[productIndex] 
+//                                         ? getGraduationImage(productIndex, selectedGraduation[productIndex]) 
+//                                         : fumeDefault} 
+//                                     alt={product.name} 
+//                                 />
 //                                 <h2>{product.name}</h2>
 //                                 <p>{product.description}</p>
                                 
-//                                 {/* Verifica se o array gradations tem conteúdo */}
 //                                 {product.gradations.length > 0 && (
 //                                     <>
-//                                         <h3 onClick={() => toggleCard(index)}>Graduações:</h3>
+//                                         <h3 onClick={() => toggleCard(productIndex)}>Graduações:</h3>
 //                                         <ul>
-//                                             {product.gradations.map((gradation, i) => (
+//                                             {product.gradations.map((gradation, index) => (
 //                                                 <li
-//                                                     key={i}
-//                                                     onClick={() => handleGraduationClick(gradation)} // Altera a imagem com base na graduação
+//                                                     key={index}
+//                                                     onClick={() => handleGraduationClick(productIndex, gradation.name)} // Atualiza a imagem com base na graduação
 //                                                     style={{ cursor: 'pointer', color: '#007BFF' }}
 //                                                 >
-//                                                     {gradation}
+//                                                     {gradation.name}
 //                                                 </li>
 //                                             ))}
 //                                         </ul>
 //                                     </>
 //                                 )}
-//                                 <button className={styles.expand-button} onClick={() => toggleCard(index)}>
+//                                 <button className={styles.expand-button} onClick={() => toggleCard(productIndex)}>
 //                                     +
 //                                 </button>
 //                             </div>
